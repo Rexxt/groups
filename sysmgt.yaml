@@ -19,7 +19,7 @@ installs:
     size: 53688008
     sha256: "dc03f02df89f23f6f0afa47b8b8830a81516d3d5d83095c1da5c59760950c758"
     # https://github.com/microsoft/winget-pkgs/blob/master/manifests/s/SomePythonThings/WingetUIStore/3.1.0/SomePythonThings.WingetUIStore.installer.yaml
-    flags: "/SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NoAutoStart"
+    flags: "{insfilepath} /SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NoAutoStart"
   winget_id: "SomePythonThings.WingetUIStore"
 - id: "rustdesk"
   name: "RustDesk"
