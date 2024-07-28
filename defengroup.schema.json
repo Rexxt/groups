@@ -81,8 +81,15 @@
               "extension",
               "size",
               "sha256",
-              "flags",
-              "stdflags"
+              "flags": {
+                "description": "Command to be executed to run installer in a non-interactive mode, if not using stdflags. Use variables {insfilepath}, {groupname} (for start menu groups)",
+                "type": "string"
+              },
+              "stdflags": {
+                "description": "Name of a standard command (to be defined) to run installer in a non-interactive mode.",
+                "type": "string",
+                "enum": ["msi", "nsis", "inno", "installshield"]
+              }
             }
           }
         }
