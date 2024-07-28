@@ -1,0 +1,36 @@
+name:
+  en: "System management"
+letter: "s"
+installs:
+- id: "unigetui"
+  name: "UniGetUI"
+  publisher: "Marti Climent"
+  license: "MIT"
+  alternatives:
+    - name: "Microsoft Store"
+    - name: "Synaptic"
+    - name: "Package manager CLIs"
+  purpose:
+    en: "Install, update and remove software"
+  installer:
+    version: "3.1.1"
+    url: "https://github.com/marticliment/UniGetUI/releases/download/3.1.1/UniGetUI.Installer.exe"
+    sha256: "dc03f02df89f23f6f0afa47b8b8830a81516d3d5d83095c1da5c59760950c758"
+    # https://github.com/microsoft/winget-pkgs/blob/master/manifests/s/SomePythonThings/WingetUIStore/3.1.0/SomePythonThings.WingetUIStore.installer.yaml
+    flags: "/SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NoAutoStart"
+  winget_id: "SomePythonThings.WingetUIStore"
+- id: "rustdesk"
+  name: "RustDesk"
+  publisher: "Purslane Ltd."
+  license: "AGPL-3.0-only"
+  alternatives:
+    - name: "AnyDesk"
+    - name: "TeamViewer"
+  purpose:
+    en: "Access your computer or another computer running RustDesk remotely."
+  installer:
+    version: "1.2.7"
+    url: "https://github.com/rustdesk/rustdesk/releases/download/1.2.7/rustdesk-1.2.7-x86_64.msi"
+    sha256: "7628bb36172100181bf8b2338232e931f32abdf58608cd99a66e887bc3d70c3f"
+    stdflags: "msi"
+
