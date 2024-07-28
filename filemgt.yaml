@@ -1,0 +1,37 @@
+# https://github.com/redhat-developer/yaml-language-server?tab=readme-ov-file#using-inlined-schema
+# yaml-language-server: $schema=./defengroup.schema.json
+name:
+  en: "File management"
+letter: "f"
+installs:
+- id: "7zip"
+  name: "7-zip"
+  publisher: "Igor Pavlov"
+  license: "https://www.7-zip.org/license.txt"
+  purpose:
+    en: "Extract and create compressed file archives in zip, 7z and other formats."
+  installer:
+    version: "24.07"
+    url: "https://www.7-zip.org/a/7z2407-x64.exe"
+    extension: "exe"
+    flags: "/S"
+  winget_id: "7zip.7zip"
+- id: "windirstat"
+  name: "WinDirStat"
+  publisher: ""
+  license: "GPL-2.0"
+  alternatives:
+    - name: "QDirStat"
+      platform: "Linux"
+    - name: "Filelight"
+    - name: "Disk Inventory X"
+      platform: "macOS"
+  purpose:
+    en: "Visualize disk usage"
+  installer:
+    version: "1.1.2"
+    url: "https://sourceforge.net/projects/windirstat/files/windirstat/1.1.2%20installer%20re-release%20%28more%20languages%21%29/windirstat1_1_2_setup.exe/download"
+    extension: "exe"
+    size: 645729
+    sha256: "370a27a30ee57247faddeb1f99a83933247e07c8760a07ed82e451e1cb5e5cdd"
+    stdflags: "nsis"
