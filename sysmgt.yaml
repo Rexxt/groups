@@ -7,9 +7,9 @@ installs:
   publisher: "Marti Climent"
   license: "MIT"
   alternatives:
-    - name: "Microsoft Store"
-    - name: "Synaptic"
-    - name: "Package manager CLIs"
+  - name: "Microsoft Store"
+  - name: "Synaptic"
+  - name: "Package manager CLIs"
   purpose:
     en: "Install, update and remove software"
   installer:
@@ -26,8 +26,8 @@ installs:
   publisher: "Purslane Ltd."
   license: "AGPL-3.0-only"
   alternatives:
-    - name: "AnyDesk"
-    - name: "TeamViewer"
+  - name: "AnyDesk"
+  - name: "TeamViewer"
   purpose:
     en: "Access your computer or another computer running RustDesk remotely."
   installer:
