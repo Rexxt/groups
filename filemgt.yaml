@@ -6,6 +6,7 @@ letter: "f"
 installs:
 - id: "7zip"
   name: "7-zip"
+  homepage: "https://www.7-zip.org"
   publisher: "Igor Pavlov"
   license: "https://www.7-zip.org/license.txt"
   purpose:
@@ -18,16 +19,17 @@ installs:
   winget_id: "7zip.7zip"
 - id: "windirstat"
   name: "WinDirStat"
+  homepage: "https://windirstat.net"
   publisher: ""
-  license: "GPL-2.0"
+  license: "GPL-2.0-only"
   alternatives:
-    - name: "QDirStat"
-      platform: "Linux"
-    - name: "Filelight"
-    - name: "Disk Inventory X"
-      platform: "macOS"
+  - name: "QDirStat"
+    platform: "Linux"
+  - name: "Filelight"
+  - name: "Disk Inventory X"
+    platform: "macOS"
   purpose:
-    en: "Visualize disk usage"
+    en: "Visualize disk usage."
   installer:
     version: "1.1.2"
     url: "https://sourceforge.net/projects/windirstat/files/windirstat/1.1.2%20installer%20re-release%20%28more%20languages%21%29/windirstat1_1_2_setup.exe/download"
@@ -35,3 +37,20 @@ installs:
     size: 645729
     sha256: "370a27a30ee57247faddeb1f99a83933247e07c8760a07ed82e451e1cb5e5cdd"
     stdflags: "nsis"
+- id: "openhashtab"
+  name: "OpenHashTab"
+  homepage: "https://github.com/namazso/OpenHashTab"
+  publisher: "namazso"
+  license: "GPL-3.0-or-later"
+  alternatives:
+  - name: "GtkHash"
+    platform: "Linux"
+  purpose: 
+    en: "Calculate and check file hashes."
+  installer:
+    version: "3.0.4"
+    url: "https://github.com/namazso/OpenHashTab/releases/download/v3.0.4/OpenHashTab_setup.exe"
+    extension: "exe"
+    size: 10843496
+    sha256: 9966e3ed6693dfc42904a2aaa1b294a2cd1edd059ef795729a76956cc21cd239
+    
