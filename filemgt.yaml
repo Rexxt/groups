@@ -1,4 +1,3 @@
-# https://github.com/redhat-developer/yaml-language-server?tab=readme-ov-file#using-inlined-schema
 # yaml-language-server: $schema=./defengroup.schema.json
 name:
   en: "File management"

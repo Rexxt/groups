@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=./defengroup.schema.json
 name:
   en: "System management"
 letter: "s"
