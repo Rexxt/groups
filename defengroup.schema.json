@@ -28,6 +28,11 @@
             "description": "Displayed name for the software. Not localized, just a string.",
             "type": "string"
           },
+          "homepage": {
+            "description": "URL to the software's online homepage.",
+            "type": "string",
+            "format": "uri"
+          },
           "publisher": {
             "description": "Name of person or organization that publishes the software",
             "type": "string"
@@ -76,11 +81,28 @@
             "description": "Object containing properties for an installer of the software.",
             "type": "object",
             "properties": {
-              "version", 
-              "url",
-              "extension",
-              "size",
-              "sha256",
+              "version": {
+                "type": "string"
+              }, 
+              "url": {
+                "description": "Download URL for this installer. Must resolve directly or HTTP redirect to the installer file.",
+                "type": "string",
+                "format": "uri"
+              },
+              "extension": {
+                "description": "Extension for the installer filename, identifying its format. Filename will be id dot extension",
+                "type": "string",
+                "enum": ["exe", "msi"]
+              },
+              "size": {
+                "description": "Size in bytes of the installer file",
+                "type": "integer"
+              },
+              "sha256": {
+                "description": "Lowercase hexadecimal SHA-256 hash of the installer file. Please check from winget-pkgs, the official download page, if present and your own calculation.",
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
               "flags": {
                 "description": "Command to be executed to run installer in a non-interactive mode, if not using stdflags. Use variables {insfilepath}, {groupname} (for start menu groups)",
                 "type": "string"
