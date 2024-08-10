@@ -104,13 +104,20 @@
                 "pattern": "^[0-9a-f]{64}$"
               },
               "flags": {
-                "description": "Command to be executed to run installer in a non-interactive mode, if not using stdflags. Use variables {insfilepath}, {groupname} (for start menu groups)",
-                "type": "string"
-              },
-              "stdflags": {
-                "description": "Name of a standard command (to be defined) to run installer in a non-interactive mode.",
-                "type": "string",
-                "enum": ["msi", "nsis", "inno", "installshield"]
+                "properties": {
+                  "standard": {
+                    "description": "Defined name of a standard command to run this installer in a non-interactive mode. See enum in schema",
+                    "enum": ["msi", "nsis", "inno", "installshield"]
+                  },
+                  "extend": {
+                    "description": "Appended to the end of the standard command after a space.",
+                    "type": "string"
+                  },
+                  "custom": {
+                    "description": "Command to be executed to run installer in a non-interactive mode, if not using standard. Use variables {insfilepath}, {startmenugroup}",
+                    "type": "string"
+                  }
+                }
               }
             }
           }
