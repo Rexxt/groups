@@ -14,7 +14,8 @@ installs:
     version: "24.07"
     url: "https://www.7-zip.org/a/7z2407-x64.exe"
     extension: "exe"
-    flags: "/S"
+    flags:
+      custom: /S
   winget_id: "7zip.7zip"
 - id: "windirstat"
   name: "WinDirStat"
@@ -35,7 +36,8 @@ installs:
     extension: "exe"
     size: 645729
     sha256: "370a27a30ee57247faddeb1f99a83933247e07c8760a07ed82e451e1cb5e5cdd"
-    stdflags: "nsis"
+    flags:
+      standard: nsis
 - id: "openhashtab"
   name: "OpenHashTab"
   homepage: "https://github.com/namazso/OpenHashTab"
@@ -52,4 +54,5 @@ installs:
     extension: "exe"
     size: 10843496
     sha256: 9966e3ed6693dfc42904a2aaa1b294a2cd1edd059ef795729a76956cc21cd239
-    
+    flags:
+      standard: inno
