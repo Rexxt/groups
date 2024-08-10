@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./defengroup.schema.json
 name:
   en: "File management"
-letter: "f"
+letter: f
 installs:
 - id: "7zip"
   name: "7-zip"
@@ -56,3 +56,4 @@ installs:
     sha256: 9966e3ed6693dfc42904a2aaa1b294a2cd1edd059ef795729a76956cc21cd239
     flags:
       standard: inno
+
