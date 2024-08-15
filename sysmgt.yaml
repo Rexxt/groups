@@ -3,7 +3,7 @@ name:
   en: "System management"
 letter: "s"
 installs:
-- id: "unigetui"
+- id: unigetui
   name: "UniGetUI"
   publisher: "Marti Climent"
   license: "MIT"
@@ -24,7 +24,7 @@ installs:
       standard: inno
       extend: /NoAutoStart
   winget_id: "SomePythonThings.WingetUIStore"
-- id: "rustdesk"
+- id: rustdesk
   name: "RustDesk"
   publisher: "Purslane Ltd."
   license: "AGPL-3.0-only"
@@ -41,7 +41,7 @@ installs:
     sha256: "7628bb36172100181bf8b2338232e931f32abdf58608cd99a66e887bc3d70c3f"
     flags:
       standard: msi
-- id: "bulkcrapuninstaller"
+- id: bulkcrapuninstaller
   name: "Bulk Crap Uninstaller"
   homepage: "https://www.bcuninstaller.com/"
   publisher: "Marcin Szeniak"

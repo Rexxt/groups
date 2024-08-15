@@ -3,7 +3,7 @@ name:
   en: "File management"
 letter: f
 installs:
-- id: "7zip"
+- id: 7zip
   name: "7-zip"
   homepage: "https://www.7-zip.org"
   publisher: "Igor Pavlov"
@@ -17,7 +17,7 @@ installs:
     flags:
       custom: /S
   winget_id: "7zip.7zip"
-- id: "windirstat"
+- id: windirstat
   name: "WinDirStat"
   homepage: "https://windirstat.net"
   publisher: ""
@@ -38,7 +38,7 @@ installs:
     sha256: "370a27a30ee57247faddeb1f99a83933247e07c8760a07ed82e451e1cb5e5cdd"
     flags:
       standard: nsis
-- id: "bleachbit"
+- id: bleachbit
   name: "BleachBit"
   homepage: "https://www.bleachbit.org/"
   publisher: "Andrew Ziem"
@@ -54,8 +54,8 @@ installs:
     size: 11883936
     sha256: 4be77c019328203bc16fcd6ab62b41e26e14edfdc4572448d0ddb101ba796ec9
     flags:
-      standard: inno
-- id: "openhashtab"
+      standard: nsis
+- id: openhashtab
   name: "OpenHashTab"
   homepage: "https://github.com/namazso/OpenHashTab"
   publisher: "namazso"
@@ -73,4 +73,3 @@ installs:
     sha256: 9966e3ed6693dfc42904a2aaa1b294a2cd1edd059ef795729a76956cc21cd239
     flags:
       standard: inno
-
