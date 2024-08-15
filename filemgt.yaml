@@ -38,6 +38,23 @@ installs:
     sha256: "370a27a30ee57247faddeb1f99a83933247e07c8760a07ed82e451e1cb5e5cdd"
     flags:
       standard: nsis
+- id: "bleachbit"
+  name: "BleachBit"
+  homepage: "https://www.bleachbit.org/"
+  publisher: "Andrew Ziem"
+  license: "GPL-3.0-only"
+  alternatives:
+    - name: "CCleaner"
+  purpose:
+    en: "Clean up files to save space or for privacy and security."
+  installer:
+    version: "4.6.0"
+    url: "https://www.bleachbit.org/download/file/t?file=BleachBit-4.6.0-setup.exe"
+    extension: exe
+    size: 11883936
+    sha256: 4be77c019328203bc16fcd6ab62b41e26e14edfdc4572448d0ddb101ba796ec9
+    flags:
+      standard: inno
 - id: "openhashtab"
   name: "OpenHashTab"
   homepage: "https://github.com/namazso/OpenHashTab"

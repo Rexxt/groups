@@ -3,7 +3,7 @@ name:
   en: Internet access
 letter: i
 installs:
-- id: firefox
+- id: "firefox"
   name: Mozilla Firefox
   publisher: Mozilla
   license: MPL-2.0
